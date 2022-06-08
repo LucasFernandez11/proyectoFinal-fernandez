@@ -1,0 +1,29 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title>
+        Excluir Estudiante
+    </mat-card-title>
+    
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="people.nombre" disabled name="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="CPF" [value]="people.dni" disabled name="cpf">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [value]="people.email" disabled name="email">
+        </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="deletePessoa()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

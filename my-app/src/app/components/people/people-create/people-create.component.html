@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-title>
+        Cadastrar Pessoa
+    </mat-card-title>
+
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="people.nombre" name="nombre">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="dni" [(ngModel)]="people.dni" name="dni">
+        </mat-form-field> 
+
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="people.email" name="email">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="fecha de nacimiento" [(ngModel)]="people.cumpleanos" name="cumpleanos">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Telefono" [(ngModel)]="people.telefono" name="telefono">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Curso" [(ngModel)]="people.curso" name="curso">
+        </mat-form-field> 
+    </form>
+
+    <button mat-raised-button (click)="createPeople()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
